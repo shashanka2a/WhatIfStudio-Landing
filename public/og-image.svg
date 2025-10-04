@@ -1,0 +1,21 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="100%" stop-color="#0D1B2A" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB97D" />
+      <stop offset="100%" stop-color="#FF8C42" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <text x="600" y="300" font-family="Inter, sans-serif" font-size="64" font-weight="bold" fill="url(#textGrad)" text-anchor="middle">
+    WhatIfStudio.art
+  </text>
+  <text x="600" y="400" font-family="Inter, sans-serif" font-size="32" font-weight="normal" fill="white" text-anchor="middle">
+    Rewriting Sad Endings Beautifully
+  </text>
+  <circle cx="600" cy="500" r="50" fill="none" stroke="url(#textGrad)" stroke-width="4" />
+  <path d="M 550 500 C 550 470, 570 470, 590 480 C 610 490, 630 480, 650 500 C 650 520, 630 530, 610 520 C 590 510, 570 520, 550 500" stroke="url(#textGrad)" stroke-width="4" stroke-linecap="round" fill="none" />
+</svg>
