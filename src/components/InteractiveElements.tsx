@@ -242,9 +242,10 @@ export const CursorFollower = () => {
     <motion.div
       className="fixed pointer-events-none z-50 mix-blend-difference"
       animate={{
-        x: mousePosition.x - 16,
-        y: mousePosition.y - 16,
-        scale: isHovering ? 2 : 1,
+        x: mousePosition.x - 8,
+        y: mousePosition.y - 8,
+        scale: isHovering ? 1.5 : 0.8,
+        opacity: isHovering ? 1 : 0.3,
       }}
       transition={{
         type: "spring",
@@ -252,7 +253,7 @@ export const CursorFollower = () => {
         damping: 28,
       }}
     >
-      <div className="w-8 h-8 bg-white rounded-full opacity-75" />
+      <div className="w-4 h-4 bg-gradient-to-r from-[#FFB97D] to-[#FF8C42] rounded-full opacity-80" />
     </motion.div>
   )
 }

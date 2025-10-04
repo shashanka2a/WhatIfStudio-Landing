@@ -2,6 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #FFB97D 0%, #FF8C42 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #FF8C42 0%, #FFB97D 100%);
+}
+
+::-webkit-scrollbar-corner {
+  background: #000000;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #FFB97D #000000;
+}
+
+/* Hide scrollbar for mobile */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  * {
+    scrollbar-width: none;
+  }
+}
+
+/* Ensure proper spacing and prevent layout issues */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Fix any potential white space issues */
+html, body {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* Ensure sections have proper spacing */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fix any potential z-index issues */
+.relative {
+  position: relative;
+}
+
+.isolate {
+  isolation: isolate;
+}
+
+/* Navigation specific fixes */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+/* Ensure proper spacing between navigation items */
+nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+}
+
+/* Fix any potential margin/padding issues */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure proper text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 :root {
   --font-size: 16px;
   --background: #fff;
