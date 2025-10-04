@@ -55,7 +55,7 @@ export function ModernNavigation() {
             }}
           >
             <motion.span
-              className="text-lg font-semibold text-transparent bg-gradient-to-r from-[#FFB97D] to-[#FF8C42] bg-clip-text tracking-wide"
+              className="text-xl font-bold text-transparent bg-gradient-to-r from-[#FFB97D] to-[#FF8C42] bg-clip-text tracking-wide"
               style={{ fontFamily: "'Inter', sans-serif" }}
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
@@ -65,12 +65,12 @@ export function ModernNavigation() {
           </motion.a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center gap-8">
             {navItems.map((item, index) => (
               <motion.a
                 key={item.name}
                 href={item.href}
-                className="relative px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-300 group"
+                className="relative px-6 py-3 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-300 group"
                 style={{ fontFamily: "'Inter', sans-serif" }}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}

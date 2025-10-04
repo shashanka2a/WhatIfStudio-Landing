@@ -15,8 +15,15 @@ const config: Config = {
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
       },
+      spacing: {
+        '18': '4.5rem',
+        '88': '22rem',
+      },
     },
   },
   plugins: [],
+  corePlugins: {
+    preflight: true,
+  },
 }
 export default config

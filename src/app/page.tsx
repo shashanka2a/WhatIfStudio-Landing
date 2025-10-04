@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <div className="dark">
-      <div className="min-h-screen bg-black text-white overflow-x-hidden relative">
+      <div className="min-h-screen bg-black text-white overflow-x-hidden relative w-full max-w-full">
         {/* Background overlay to prevent section bleeding */}
         <div className="fixed inset-0 bg-black z-0" />
         
@@ -32,17 +32,17 @@ export default function Home() {
         {fontsLoaded && <FloatingParticles />}
         
         {/* Main content with proper layering and isolation */}
-        <main className="relative z-10">
-          <div id="home" className="relative isolate">
+        <main className="relative z-10 w-full max-w-full">
+          <div id="home" className="relative isolate w-full">
             <ModernHero />
           </div>
-          <div id="gallery" className="relative isolate">
+          <div id="gallery" className="relative isolate w-full">
             <ModernGallery />
           </div>
-          <div id="philosophy" className="relative isolate">
+          <div id="philosophy" className="relative isolate w-full">
             <ModernPhilosophy />
           </div>
-          <div id="join" className="relative isolate">
+          <div id="join" className="relative isolate w-full">
             <ModernJoinUs />
           </div>
         </main>
